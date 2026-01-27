@@ -9,7 +9,7 @@ resource "gitlab_branch_protection" "this" {
   unprotect_access_level       = var.unprotect_access_level
 
   dynamic "allowed_to_merge" {
-    for_each = var.allowed_to_merge
+    for_each = length(var.allowed_to_merge) > 0 ? [var.allowed_to_merge] : []
 
     content {
       group_id = lookup(allowed_to_merge.value, "group_id", null)
@@ -18,7 +18,7 @@ resource "gitlab_branch_protection" "this" {
   }
 
   dynamic "allowed_to_push" {
-    for_each = var.allowed_to_push
+    for_each = length(var.allowed_to_push) > 0 ? [var.allowed_to_push] : []
 
     content {
       deploy_key_id = lookup(allowed_to_push.value, "deploy_key_id", null)
@@ -28,7 +28,7 @@ resource "gitlab_branch_protection" "this" {
   }
 
   dynamic "allowed_to_unprotect" {
-    for_each = var.allowed_to_unprotect
+    for_each = length(var.allowed_to_unprotect) > 0 ? [var.allowed_to_unprotect] : []
 
     content {
       group_id = lookup(allowed_to_unprotect.value, "group_id", null)

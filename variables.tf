@@ -16,20 +16,20 @@ variable "allow_force_push" {
 }
 
 variable "allowed_to_merge" {
-  type        = list(any)
-  default     = []
+  type        = map(any)
+  default     = {}
   description = "Array of access levels and user(s)/group(s) allowed to merge to protected branch"
 }
 
 variable "allowed_to_push" {
-  type        = list(any)
-  default     = []
+  type        = map(any)
+  default     = {}
   description = "Array of access levels and user(s)/group(s) allowed to push to protected branch"
 }
 
 variable "allowed_to_unprotect" {
-  type        = list(any)
-  default     = []
+  type        = map(any)
+  default     = {}
   description = "Array of access levels and user(s)/group(s) allowed to unprotect push to protected branch"
 }
 
