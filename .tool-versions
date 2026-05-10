@@ -1,5 +1,5 @@
 pre-commit 4.6.0
-terraform 1.15.1
-terraform-docs 0.22.0
+terraform 1.15.2
+terraform-docs 0.23.0
 tflint 0.62.0
 trivy 0.70.0
