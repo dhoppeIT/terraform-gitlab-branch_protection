@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-branch_protection/compare/v1.0.1...v2.0.0) (2026-05-26)
+
+### ⚠ BREAKING CHANGES
+
+* **terraform:** This release contains breaking changes. Please have a
+look at the upgrade guide:
+
+  - https://registry.terraform.io/providers/gitlabhq/gitlab/latest/docs/guides/version-19.0-upgrade
+
+### Features
+
+* **terraform:** Add support for GitLab 19.x ([d0cdf21](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-branch_protection/commit/d0cdf2175c4660e8a9b9a5e52cf1efeed3d34cc5))
+
 ## [1.0.1](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-branch_protection/compare/v1.0.0...v1.0.1) (2026-01-27)
 
 ### Bug Fixes
