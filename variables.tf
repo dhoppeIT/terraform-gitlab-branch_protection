@@ -77,22 +77,22 @@ variable "code_owner_approval_required" {
 
 variable "merge_access_level" {
   type        = string
-  default     = "maintainer"
+  default     = null
   description = "Access levels allowed to merge. Only available for CE instances."
 
   validation {
-    condition     = contains(["no one", "developer", "maintainer", "admin"], var.merge_access_level)
+    condition     = var.merge_access_level == null || contains(["no one", "developer", "maintainer", "admin"], var.merge_access_level)
     error_message = "Valid values are: no one, developer, maintainer, admin."
   }
 }
 
 variable "push_access_level" {
   type        = string
-  default     = "maintainer"
+  default     = null
   description = "Access levels allowed to push. Only available for CE instances."
 
   validation {
-    condition     = contains(["no one", "developer", "maintainer", "admin"], var.push_access_level)
+    condition     = var.push_access_level == null || contains(["no one", "developer", "maintainer", "admin"], var.push_access_level)
     error_message = "Valid values are: no one, developer, maintainer, admin."
   }
 }

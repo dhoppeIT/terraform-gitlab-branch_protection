@@ -73,9 +73,9 @@ No modules.
 | <a name="input_allowed_to_unprotect"></a> [allowed\_to\_unprotect](#input\_allowed\_to\_unprotect) | Array of access levels and user(s)/group(s) allowed to unprotect the protected branch. Only available for Premium and Ultimate instances. | ```list(object({ access_level = optional(string) group_id = optional(number) user_id = optional(number) }))``` | `[]` | no |
 | <a name="input_branch"></a> [branch](#input\_branch) | Name of the branch | `string` | n/a | yes |
 | <a name="input_code_owner_approval_required"></a> [code\_owner\_approval\_required](#input\_code\_owner\_approval\_required) | Can be set to true to require code owner approval before merging. Only available for Premium and Ultimate instances. | `bool` | `null` | no |
-| <a name="input_merge_access_level"></a> [merge\_access\_level](#input\_merge\_access\_level) | Access levels allowed to merge. Only available for CE instances. | `string` | `"maintainer"` | no |
+| <a name="input_merge_access_level"></a> [merge\_access\_level](#input\_merge\_access\_level) | Access levels allowed to merge. Only available for CE instances. | `string` | `null` | no |
 | <a name="input_project"></a> [project](#input\_project) | The ID of the project | `string` | n/a | yes |
-| <a name="input_push_access_level"></a> [push\_access\_level](#input\_push\_access\_level) | Access levels allowed to push. Only available for CE instances. | `string` | `"maintainer"` | no |
+| <a name="input_push_access_level"></a> [push\_access\_level](#input\_push\_access\_level) | Access levels allowed to push. Only available for CE instances. | `string` | `null` | no |
 
 ## Outputs
 
