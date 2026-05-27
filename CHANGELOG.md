@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.1](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-branch_protection/compare/v2.0.0...v2.0.1) (2026-05-27)
+
+### Bug Fixes
+
+* **terraform:** Change default value of merge_access_level and push_access_level ([f6cb9a2](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-branch_protection/commit/f6cb9a2fc349b4ce292b3798e4fd35ba2a074177))
+
 ## [2.0.0](https://gitlab.com/terraform-child-modules-48151/terraform-gitlab-branch_protection/compare/v1.0.1...v2.0.0) (2026-05-26)
 
 ### ⚠ BREAKING CHANGES
